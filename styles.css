@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Kumbh Sans',sans-serif;
+}
+
+body{
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185deg, 75%, 39%);
+}
+
+main{
+    width: 26rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Image-Container{
+    height: 65%;
+    background-image: url("images/bg-pattern-card.svg");
+    background-size: cover;
+    border-radius: 1.5em 1.5em 0em 0em;
+}
+
+.Text-Container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    position: relative;
+    padding-top:5em;
+    border-radius: 0em 0em 1.5em 1.5em;
+}
+
+.Text-Container img{
+    top:-3em;
+    position: absolute;
+    border-radius: 50%;
+    border:7px solid #FFF
+}
+
+.Name-Age-Container{
+    display: flex;
+    gap:0.7em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.7em;
+}
+
+.Name-Age-Container h1{
+    font-size: 1.2rem;
+}
+
+.Name-Age-Container .Age-Text{
+    font-size: 1.1rem;
+}
+
+.Text-Container .Location-Text{
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 1.5em;
+}
+
+.Text-Container hr{
+    height: 1px;
+    border:0;
+    background-color:  hsl(0, 16%, 89%);
+    width: 100%;
+}
+
+.Stats-Container{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Stats-Container .Smaller-Container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:0.2em;
+}
+
+.OverTitle{
+    font-size:1.1rem;
+    font-weight: 700;
+}
+
+.UnderTitle{
+    color:hsl(0, 0%, 59%);
+    font-size:0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+footer{
+    position: relative;
+    bottom:-16.5em;
+}
+
+@media (max-width:700px){
+    footer{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
